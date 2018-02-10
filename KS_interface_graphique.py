@@ -19,9 +19,6 @@ import tkinter.messagebox as tkm
 
 fenetre = tk.Tk()
 fenetre.title("Interface Graphique PJT2A")
-#w,h = fenetre.winfo_screenwidth(),fenetre.winfo_screenheight()
-#fenetre.overrideredirect(1)
-#fenetre.geometry("%dx%d+0+0" % (w,h))
 fenetre.attributes('-fullscreen', 1)
 
 ######################
@@ -79,9 +76,6 @@ def ffac():
     
     fenetre1 = tk.Tk()
     fenetre1.title("Fichier Facture")
-#    w, h = fenetre1.winfo_screenwidth(), fenetre1.winfo_screenheight()
-#    fenetre1.overrideredirect(1)
-#    fenetre1.geometry("%dx%d+0+0" % (w, h))
     fenetre1.attributes('-fullscreen', 1)
     l = tk.LabelFrame(fenetre1, text="Données", padx=660, pady=50)
     l.pack(fill="both", expand="yes")
