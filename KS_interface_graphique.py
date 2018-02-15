@@ -79,9 +79,7 @@ def ffac():
     
     fenetre1 = tk.Tk()
     fenetre1.title("Fichier Facture")
-    w, h = fenetre1.winfo_screenwidth(), fenetre1.winfo_screenheight()
-    fenetre1.geometry("%dx%d+0+0" % (w, h))
-#    fenetre1.attributes('-fullscreen', 1)
+    fenetre1.attributes('-fullscreen', 1)
     l = tk.LabelFrame(fenetre1, text="Données", padx=660, pady=50)
     l.pack(fill="both", expand="yes")
     l.place(x='20',y='20')
