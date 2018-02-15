@@ -19,7 +19,9 @@ import numpy as np
 
 fenetre = tk.Tk()
 fenetre.title("Interface Graphique PJT2A")
-fenetre.attributes('-fullscreen', 1)
+w, h = fenetre.winfo_screenwidth(), fenetre.winfo_screenheight()
+fenetre.geometry("%dx%d+0+0" % (w, h))
+#fenetre.attributes('-fullscreen', 1)
 
 ######################
 # Variables globales #
@@ -39,6 +41,7 @@ def msg():
 def msg_q():
     if tkm.askyesno('Alerte', 'Êtes-vous sûr de vouloir quitter ?'):
         fenetre.destroy()
+                
 
 def aff():
     Canevas3 = tk.Canvas(fenetre,width=700,height=650, bg ='black')
@@ -76,7 +79,9 @@ def ffac():
     
     fenetre1 = tk.Tk()
     fenetre1.title("Fichier Facture")
-    fenetre1.attributes('-fullscreen', 1)
+    w, h = fenetre1.winfo_screenwidth(), fenetre1.winfo_screenheight()
+    fenetre1.geometry("%dx%d+0+0" % (w, h))
+#    fenetre1.attributes('-fullscreen', 1)
     l = tk.LabelFrame(fenetre1, text="Données", padx=660, pady=50)
     l.pack(fill="both", expand="yes")
     l.place(x='20',y='20')
