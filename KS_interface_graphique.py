@@ -204,22 +204,6 @@ def ffac():
         Label1.place(x=dimx,y=dimy)
         j=j+1
     
-    ######################################
-    # Utilisation de Panda et Matplotlib #
-    ######################################
-    
-#    #Extraction des données
-#    df = pd.read_csv("essai.csv")
-#    print(df)
-#    
-#    # Affichage du graph de températures
-#    df.TAmb.plot(
-#        marker="o",
-#        linestyle="dashed",
-#        title="Température en Fonction du temps 01/01/1990",
-#        figsize=(8, 6),
-#        fontsize=16,
-#        xlim=(pd.date_range("00:00", "23:00"))
        
     #############################
     # STARTING SECONDARY WINDOW #
@@ -247,19 +231,6 @@ Button4 = tk.Button(l,text="Générer Profil P10",fg='black',command=aff, padx=2
 Button4.place(x='-80',y='50')
 Button5 = tk.Button(l,text="Générer Fichier PDF",fg='black',command=aff, padx=22, pady=10)
 Button5.place(x='-80',y='125')
-
-#########################
-# Fenêtre d'acquisition #
-#########################
-
-#entree = Entry(fenetre, textvariable=value, width=30)
-#entree.pack()
-#label = Label(fenetre,textvariable=value)
-#label.pack()
-#label.place(x='650',y='0')
-#
-#Button6 = Button(fenetre,text="Calculer",fg='black',command=Calcul, padx=10, pady=10)
-#Button6.place(x='458',y='30')
 
 ########
 # Menu #
